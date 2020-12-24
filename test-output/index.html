@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Web_Automator" class="navigator-link">
+              <span class="suite-name border-failed">Web Automator</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Web_Automator" class="navigator-link ">
+                    <span>C:\Passion\TestProject\sdk-projects\java.web.automator\flight-module.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Web_Automator" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Web_Automator" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Web_Automator" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Web_Automator" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Web_Automator" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Web_Automator" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Web_Automator" class="hide-methods failed suite-Web_Automator"> (hide)</a> <!-- hide-methods failed suite-Web_Automator -->
+                      <a href="#" panel-name="suite-Web_Automator" class="show-methods failed suite-Web_Automator"> (show)</a> <!-- show-methods failed suite-Web_Automator -->
+                    </span>
+                    <div class="method-list-content failed suite-Web_Automator">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Automator" title="com.e2e.java.web.automator.testcases.FlightReservation" class="method navigator-link" hash-for-method="openFlightBookingForm(public void com.e2e.java.web.automator.testcases.FlightReservation.openFlightBookingForm(java.lang.r...)">openFlightBookingForm(public void com.e2e.java.web.automator.testcases.FlightReservation.openFlightBookingForm(java.lang.r...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Web_Automator -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Web_Automator" class="hide-methods skipped suite-Web_Automator"> (hide)</a> <!-- hide-methods skipped suite-Web_Automator -->
+                      <a href="#" panel-name="suite-Web_Automator" class="show-methods skipped suite-Web_Automator"> (show)</a> <!-- show-methods skipped suite-Web_Automator -->
+                    </span>
+                    <div class="method-list-content skipped suite-Web_Automator">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Automator" title="com.e2e.java.web.automator.testcases.FlightReservation" class="method navigator-link" hash-for-method="openFlightBookingForm">openFlightBookingForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Web_Automator -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Web_Automator" class="panel Web_Automator">
+          <div class="suite-Web_Automator-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.e2e.java.web.automator.testcases.FlightReservation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openFlightBookingForm(public void com.e2e.java.web.automator.testcases.FlightReservation.openFlightBookingForm(java.lang.r...)">
+                  </a> <!-- openFlightBookingForm(public void com.e2e.java.web.automator.testcases.FlightReservation.openFlightBookingForm(java.lang.r...) -->
+                  <span class="method-name">openFlightBookingForm</span>
+                  <span class="parameters">(public void com.e2e.java.web.automator.testcases.FlightReservation.openFlightBookingForm(java.lang.reflect.Method))</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: No active session with ID df902f1449271381394b1c7c636f5903
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CTLT095&apos;, ip: &apos;192.168.29.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: io.testproject.sdk.drivers.web.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\mvinoth\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 77b5b890-95c6-4b80-82f5-083..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: df902f1449271381394b1c7c636...}
+Session ID: df902f1449271381394b1c7c636f5903
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
+	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at com.e2e.java.web.automator.operations.BrowserOperations.lambda$0(BrowserOperations.java:13)
+	at com.e2e.java.web.automator.basepage.BasePage.just(BasePage.java:30)
+	at com.e2e.java.web.automator.flightpages.FlightHomePage.goTo(FlightHomePage.java:34)
+	at com.e2e.java.web.automator.testcases.FlightReservation.lambda$0(FlightReservation.java:24)
+	at com.e2e.java.web.automator.workflow.FlightReservationBusinessFlow.homepage(FlightReservationBusinessFlow.java:36)
+	at com.e2e.java.web.automator.testcases.FlightReservation.openFlightBookingForm(FlightReservation.java:23)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Flight Reservation Business Flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Web_Automator-class-failed -->
+          <div class="suite-Web_Automator-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.e2e.java.web.automator.testcases.FlightReservation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openFlightBookingForm">
+                  </a> <!-- openFlightBookingForm -->
+                  <span class="method-name">openFlightBookingForm</span>
+                  <div class="stack-trace">org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;com.e2e.java.web.automator.testcases.FlightReservation&apos;: Unsatisfied dependency expressed through field &apos;browser&apos;; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;chrome&apos; defined in class path resource [com/e2e/java/web/automator/browser/config/TestProjectDriver.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.testproject.sdk.drivers.web.RemoteWebDriver]: Factory method &apos;chrome&apos; threw exception; nested exception is org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.RemoteWebDriver
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CTLT095&apos;, ip: &apos;192.168.29.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: driver.version: TestProjectDriver
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:406)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance(AbstractTestNGSpringContextTests.java:146)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;chrome&apos; defined in class path resource [com/e2e/java/web/automator/browser/config/TestProjectDriver.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.testproject.sdk.drivers.web.RemoteWebDriver]: Factory method &apos;chrome&apos; threw exception; nested exception is org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.RemoteWebDriver
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CTLT095&apos;, ip: &apos;192.168.29.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: driver.version: TestProjectDriver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:484)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.context.support.SimpleThreadScope.get(SimpleThreadScope.java:74)
+	at com.e2e.java.web.automator.browser.scope.BrowserScope.get(BrowserScope.java:14)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 29 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.testproject.sdk.drivers.web.RemoteWebDriver]: Factory method &apos;chrome&apos; threw exception; nested exception is org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.RemoteWebDriver
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CTLT095&apos;, ip: &apos;192.168.29.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: driver.version: TestProjectDriver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 43 more
+Caused by: org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.RemoteWebDriver
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CTLT095&apos;, ip: &apos;192.168.29.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: driver.version: TestProjectDriver
+	at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
+	at com.e2e.java.web.automator.browser.config.TestProjectDriver.chrome(TestProjectDriver.java:41)
+	at com.e2e.java.web.automator.browser.config.TestProjectDriver$$EnhancerBySpringCGLIB$$b3cf976f.CGLIB$chrome$2(&lt;generated&gt;)
+	at com.e2e.java.web.automator.browser.config.TestProjectDriver$$EnhancerBySpringCGLIB$$b3cf976f$$FastClassBySpringCGLIB$$c41a9b35.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.e2e.java.web.automator.browser.config.TestProjectDriver$$EnhancerBySpringCGLIB$$b3cf976f.chrome(&lt;generated&gt;)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 44 more
+	at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
+	... 55 more
+Caused by: org.openqa.selenium.WebDriverException: io.testproject.sdk.internal.exceptions.InvalidTokenException: No token has been provided.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CTLT095&apos;, ip: &apos;192.168.29.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: driver.version: TestProjectDriver
+	at io.testproject.sdk.drivers.web.RemoteWebDriver.startSession(RemoteWebDriver.java:369)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:118)
+	at io.testproject.sdk.drivers.web.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:347)
+	... 60 more
+Caused by: io.testproject.sdk.internal.exceptions.InvalidTokenException: No token has been provided.
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:218)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:461)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:299)
+	at io.testproject.sdk.drivers.web.RemoteWebDriver.startSession(RemoteWebDriver.java:364)
+	... 63 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Flight Reservation Business Flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Web_Automator-class-skipped -->
+        </div> <!-- panel Web_Automator -->
+        <div panel-name="test-xml-Web_Automator" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Passion\TestProject\sdk-projects\java.web.automator\flight-module.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Web Automator&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Flight Reservation Business Flow 01&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.e2e.java.web.automator.testcases.FlightReservation&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Flight Reservation Business Flow 01 --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Flight Reservation Business Flow 02&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.e2e.java.web.automator.testcases.FlightReservation&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Flight Reservation Business Flow 02 --&gt;
+&lt;/suite&gt; &lt;!-- Web Automator --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Web_Automator" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Web Automator</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Flight Reservation Business Flow 01 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Flight Reservation Business Flow 02 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Web_Automator" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Web Automator</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Web_Automator" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Web Automator</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Web_Automator');
+function tableData_Web_Automator() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'openFlightBookingForm')
+data.setCell(0, 2, 'com.e2e.java.web.automator.testcases.FlightReservation')
+data.setCell(0, 3, 135);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'openFlightBookingForm')
+data.setCell(1, 2, 'com.e2e.java.web.automator.testcases.FlightReservation')
+data.setCell(1, 3, 0);
+window.suiteTableData['Web_Automator']= { tableData: data, tableDiv: 'times-div-Web_Automator'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <div id="times-div-Web_Automator">
+              </div> <!-- times-div-Web_Automator -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Web_Automator" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Web Automator</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Web_Automator" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Web_Automator" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.e2e.java.web.automator.testcases.FlightReservation</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9911 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.e2e.java.web.automator.testcases.FlightReservation.openFlightBookingForm(java.lang.r...)</span>
+                <span class="method-start">9949 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">openFlightBookingForm</span>
+                <span class="method-start">9961 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.e2e.java.web.automator.testcases.FlightReservation.openFlightBookingForm(java.lang.r...)</span>
+                <span class="method-start">10008 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">10012 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">10163 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.e2e.java.web.automator.testcases.FlightReservation.openFlightBookingForm(java.lang.r...)</span>
+                <span class="method-start">10164 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">openFlightBookingForm(public void com.e2e.java.web.automator.testcases.FlightReservation.openFlightBookingForm(java.lang.r...)</span>
+                <span class="method-start">10165 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.e2e.java.web.automator.testcases.FlightReservation.openFlightBookingForm(java.lang.r...)</span>
+                <span class="method-start">10305 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">10306 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

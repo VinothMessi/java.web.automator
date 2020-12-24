@@ -1,0 +1,15 @@
+FROM openjdk:11.0.8-jre
+
+#Workspace
+WORKDIR projectDirectory
+
+#Adding .jar files fom host to the container
+ADD target/java-web-automator.jar    java-web-automator.jar
+ADD target/java-web-automator.jar.original    java-web-automator.jar.original
+ADD target/java-web-automator-tests.jar    java-web-automator-tests.jar
+ADD target/libs    libs
+
+#Adding suite xml file
+ADD flight-module.xml    flight-module.xml
+
+ENTRYPOINT java -cp java-web-automator.jar:java-web-automator.jar.original:java-web-automator-tests.jar:libs/* -Dbrowser.name=$BROWSER -Dagent.url=$URL org.testng.TestNG $SUITEFILE

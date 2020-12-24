@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Web Automator">
+
+    <test name="Flight Reservation Business Flow 01">
+
+        <classes>
+
+            <class name="com.e2e.java.web.automator.testcases.FlightReservation"/>
+
+        </classes>
+
+    </test>
+
+</suite>
